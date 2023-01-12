@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@import url("components/resultado.css");
+
+:root {
+  --Laranja: hsl(25, 97%, 53%);
+  --azulMuitoEscuro: hsla(216, 12%, 8%, 0.307);
+  --azulEscuro: hsl(216, 12%, 8%);
+  --CinzaMedio: hsl(216, 12%, 54%);
+  --CinzaClaro: hsl(217, 12%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --fontPrincipal: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerGeral {
+  background-color: #1f2630;
+  border-radius: 30px;
+  padding: 45px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.paragrafoInfo {
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: var(--fontPrincipal);
+  color: var(--CinzaClaro);
+  width: 100%;
+  max-width: 390px;
+  margin-top: 15px;
+  text-align: start;
+}
+
+.titulo {
+  color: var(--White);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--fontPrincipal);
+  text-align: start;
+}
+
+#cabecalho img {
+  background-color: #272d35e5;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#info {
+  margin-top: 40px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.botoes {
+  background-color: #262f38;
+  width: 70px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+  color: var(--CinzaClaro);
+  margin: 10px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+#sectionbuttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.botoes:hover {
+  background-color: var(--CinzaMedio);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.botoes:active {
+  background-color: var(--Laranja);
+  cursor: pointer;
+}
+
+#containerEnviar {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: var(--Laranja);
+  font-size: 20px;
+  color: var(--White);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--White);
+  color: var(--Laranja);
+}
